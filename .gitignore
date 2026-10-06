@@ -1,0 +1,21 @@
+# Build outputs
+bin/
+obj/
+.vs/
+*.user
+
+# MSIX packaging build artifacts
+DesktopClockWidget.Package/AppPackage/
+DesktopClockWidget.Package/extracted/
+DesktopClockWidget.Package/extracted_new/
+*.msix
+
+# Logs and debug output
+*.log
+build_output.txt
+errors.txt
+ad_debug_log.txt
+advert_manager_methods.txt
+
+# IDE
+.vscode/

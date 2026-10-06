@@ -1,0 +1,45 @@
+# 如何编译和运行桌面时钟小组件
+
+由于当前系统中未安装.NET SDK或Visual Studio，您需要先安装这些工具才能编译和运行项目。
+
+## 步骤1：安装必要的开发工具
+
+您有两种选择：
+
+### 选项A：安装Visual Studio（推荐）
+1. 访问Visual Studio官方网站：https://visualstudio.microsoft.com/zh-hans/downloads/
+2. 下载并安装Visual Studio Community（免费版本）
+3. 在安装过程中，选择".NET 桌面开发"工作负载
+
+### 选项B：仅安装.NET SDK
+1. 访问.NET官方网站：https://dotnet.microsoft.com/zh-cn/download
+2. 下载并安装.NET 6.0 SDK（或更高版本）
+
+## 步骤2：编译项目
+
+### 使用Visual Studio编译
+1. 安装完成后，双击打开`DesktopClockWidget.sln`解决方案文件
+2. 等待Visual Studio加载项目并还原NuGet包
+3. 按F6键或点击顶部菜单栏的"生成" > "生成解决方案"来编译项目
+
+### 使用命令行编译
+1. 打开命令提示符或PowerShell
+2. 导航到项目文件夹：`cd c:\Users\ZZZ\Documents\MyProjects\DesktopClockWiget`
+3. 运行命令：`dotnet build`
+
+## 步骤3：运行项目
+
+### 在Visual Studio中运行
+- 按F5键或点击顶部菜单栏的"调试" > "开始调试"来运行项目
+
+### 直接运行编译后的程序
+1. 导航到编译输出文件夹：`cd bin\Debug\net6.0-windows`
+2. 双击运行`DesktopClockWidget.exe`文件
+
+## 注意事项
+
+- 如果遇到任何编译错误，请检查是否正确安装了所有必要的开发工具
+- 项目需要Windows操作系统才能运行
+- 确保您的Windows版本支持.NET 6.0或更高版本
+
+祝您使用愉快！

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Package xmlns="http://schemas.microsoft.com/appx/manifest/foundation/windows10" 
+         xmlns:uap="http://schemas.microsoft.com/appx/manifest/uap/windows10" 
+         xmlns:rescap="http://schemas.microsoft.com/appx/manifest/foundation/windows10/restrictedcapabilities">
+  <Identity Name="Jack777.DesktopClockWidget" 
+            Publisher="CN=C6248EB5-0DFC-441D-808D-88757F5CB879" 
+            Version="1.0.1.0" />
+  <Properties>
+    <DisplayName>桌面时钟小工具</DisplayName>
+    <PublisherDisplayName>Jack777</PublisherDisplayName>
+    <Logo>Assets\StoreLogo.png</Logo>
+    <Description>一个功能丰富的桌面时钟小工具，支持多种自定义选项</Description>
+  </Properties>
+  <Dependencies>
+    <TargetDeviceFamily Name="Windows.Desktop" MinVersion="10.0.17763.0" MaxVersionTested="10.0.19041.0" />
+  </Dependencies>
+  <Resources>
+    <Resource Language="zh-CN" />
+  </Resources>
+  <Applications>
+    <Application Id="DesktopClockWidget" 
+                 Executable="DesktopClockWidget.exe" 
+                 EntryPoint="Windows.FullTrustApplication">
+      <uap:VisualElements DisplayName="桌面时钟小工具" 
+                          Description="一个功能丰富的桌面时钟小工具" 
+                          Square150x150Logo="Assets\Square150x150Logo.png" 
+                          Square44x44Logo="Assets\Square44x44Logo.png" 
+                          BackgroundColor="transparent">
+        <uap:DefaultTile ShortName="时钟" Square71x71Logo="Assets\Square71x71Logo.png" Wide310x150Logo="Assets\Wide310x150Logo.png" Square310x310Logo="Assets\Square310x310Logo.png" />
+        <uap:SplashScreen Image="Assets\SplashScreen.png" />
+      </uap:VisualElements>
+    </Application>
+  </Applications>
+  <Capabilities>
+    <rescap:Capability Name="runFullTrust" />
+  </Capabilities>
+</Package>

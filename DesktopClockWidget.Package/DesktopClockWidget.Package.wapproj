@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProjectGuid>{3E9F5A19-7D9E-4B9C-8F47-8E8A6B3D1E8E}</ProjectGuid>
+    <OutputType>AppContainerExe</OutputType>
+    <AppxPackage>true</AppxPackage>
+    <AppxBundle>Always</AppxBundle>
+    <AppxBundlePlatforms>x86|x64|arm64</AppxBundlePlatforms>
+    <AppxTargetPlatformVersion>10.0.19041.0</AppxTargetPlatformVersion>
+    <AppxTargetPlatformMinVersion>10.0.17763.0</AppxTargetPlatformMinVersion>
+    <MinimumVisualStudioVersion>14.0</MinimumVisualStudioVersion>
+    <ApplicationManifest>Package.appxmanifest</ApplicationManifest>
+    <PackageCertificateKeyFile>Package_TemporaryKey.pfx</PackageCertificateKeyFile>
+  </PropertyGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\DesktopClockWidget.csproj">
+      <SkipGetTargetFrameworkProperties>True</SkipGetTargetFrameworkProperties>
+      <PublishProfile>ClickOnce</PublishProfile>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath)\Microsoft\WindowsXaml\v16.0\Microsoft.Windows.UI.Xaml.CSharp.targets" />
+</Project>

@@ -1,0 +1,9 @@
+[Files]
+"Assets\StoreLogo.png"	"Assets\StoreLogo.png"
+"Assets\Square44x44Logo.png"	"Assets\Square44x44Logo.png"
+"Assets\Square71x71Logo.png"	"Assets\Square71x71Logo.png"
+"Assets\Square150x150Logo.png"	"Assets\Square150x150Logo.png"
+"Assets\Wide310x150Logo.png"	"Assets\Wide310x150Logo.png"
+"Assets\Square310x310Logo.png"	"Assets\Square310x310Logo.png"
+"Assets\SplashScreen.png"	"Assets\SplashScreen.png"
+"Package.appxmanifest"	"AppxManifest.xml"
