@@ -8,6 +8,8 @@ obj/
 DesktopClockWidget.Package/AppPackage/
 DesktopClockWidget.Package/extracted/
 DesktopClockWidget.Package/extracted_new/
+DesktopClockWidget.Package/publish_x64/
+DesktopClockWidget.Package/msix_layout/
 *.msix
 
 # Logs and debug output
