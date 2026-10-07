@@ -2,11 +2,11 @@
 <Package xmlns="http://schemas.microsoft.com/appx/manifest/foundation/windows10" 
          xmlns:uap="http://schemas.microsoft.com/appx/manifest/uap/windows10" 
          xmlns:rescap="http://schemas.microsoft.com/appx/manifest/foundation/windows10/restrictedcapabilities">
-  <Identity Name="Jack777.DesktopClockWidget" 
-            Publisher="CN=C6248EB5-0DFC-441D-808D-88757F5CB879" 
-            Version="1.0.1.0" />
+  <Identity Name="Jack777.DesktopClockWidget"
+            Publisher="CN=C6248EB5-0DFC-441D-808D-88757F5CB879"
+            Version="1.0.2.0" />
   <Properties>
-    <DisplayName>桌面时钟小工具</DisplayName>
+    <DisplayName>DesktopClockWidget</DisplayName>
     <PublisherDisplayName>Jack777</PublisherDisplayName>
     <Logo>Assets\StoreLogo.png</Logo>
     <Description>一个功能丰富的桌面时钟小工具，支持多种自定义选项</Description>
