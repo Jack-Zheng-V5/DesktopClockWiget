@@ -19,3 +19,6 @@ advert_manager_methods.txt
 
 # IDE
 .vscode/
+
+# Signing keys (keep out of version control; distribute the .cer via Releases)
+*.pfx

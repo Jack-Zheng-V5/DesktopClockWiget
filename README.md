@@ -2,6 +2,23 @@
 
 这是一个使用C#开发的Windows桌面时钟小组件，具有悬浮功能、自定义大小、闹钟和开机自启动等特性。
 
+## 下载与安装
+
+从 [Releases 页面](https://github.com/Jack-Zheng-V5/DesktopClockWiget/releases) 下载最新的 `DesktopClockWidget_1.0.1.0_x64.msix` 和 `DesktopClockWidget.cer` 两个文件。
+
+安装包为 x64 自包含发布，**无需安装 .NET 运行时**，要求 Windows 10 1809（内部版本 17763）及以上。
+
+### 安装步骤
+
+1. **先安装证书**（仅首次需要）：双击 `DesktopClockWidget.cer` → 点击"安装证书" → 选择"本地计算机" → 勾选"将所有的证书都放入下列存储" → 浏览选择"受信任人" → 完成。
+   也可以用管理员 PowerShell 执行：
+   ```powershell
+   Import-Certificate -FilePath .\DesktopClockWidget.cer -CertStoreLocation Cert:\LocalMachine\TrustedPeople
+   ```
+2. **安装应用**：双击 `DesktopClockWidget_1.0.1.0_x64.msix`，按提示安装即可。
+
+> 由于安装包使用自签名证书，Windows 可能提示"无法验证发布者"，按上述步骤先安装证书即可正常安装。
+
 ## 功能特性
 
 1. **传统圆形钟表盘**：直观的模拟时钟界面，显示时、分、秒针
@@ -52,4 +69,5 @@
 
 ## 版本历史
 
+- v1.0.1：发布首个 GitHub Release，提供 x64 自包含 MSIX 安装包（无需 .NET 运行时）
 - v1.0.0：初始版本，包含所有基本功能
